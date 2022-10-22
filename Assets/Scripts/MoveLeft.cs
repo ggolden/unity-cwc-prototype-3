@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// the treadmill
+
 public class MoveLeft : MonoBehaviour
 {
-    private float speed = 30;
+    private float speed = 16;
     private float leftBound = -10;
 
     private PlayerConttoller playerControllerScript;
@@ -26,6 +28,7 @@ public class MoveLeft : MonoBehaviour
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
+            playerControllerScript.score++;
         }
     }
 }

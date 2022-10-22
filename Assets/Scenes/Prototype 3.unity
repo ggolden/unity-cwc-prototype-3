@@ -293,14 +293,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0, y: 0.016868444, z: -0, w: 0.9998577}
-  m_LocalPosition: {x: 8, y: 4, z: -15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.005945417, y: -0.121415004, z: -0.00093176856, w: 0.99258363}
+  m_LocalPosition: {x: 14.82, y: 3.97, z: -13.04}
+  m_LocalScale: {x: 1.1237, y: 1.1237, z: 1.1237}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 1.933, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.663, y: -13.949, z: -0.189}
 --- !u!1 &835818919
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 3afad42cab5a57a4c9f19f8deaaf8689, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.047824953
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 3afad42cab5a57a4c9f19f8deaaf8689, type: 3}
       propertyPath: m_LocalPosition.y
@@ -450,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 3afad42cab5a57a4c9f19f8deaaf8689, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0485484
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 3afad42cab5a57a4c9f19f8deaaf8689, type: 3}
       propertyPath: m_LocalRotation.w
@@ -499,9 +499,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c1dbe8d7ace4dc1bff57be57d43050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 700
+  jumpForce: 500
   gravityModifier: 1.5
   gameOver: 0
+  score: 0
 --- !u!65 &939408147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -513,8 +514,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4417144, y: 2.8275638, z: 1.1325332}
-  m_Center: {x: 0.08, y: 1.49, z: -0.24}
+  m_Size: {x: 1.4417144, y: 2.8275638, z: 0.52985513}
+  m_Center: {x: 0.07999998, y: 1.49, z: 0.06133914}
 --- !u!54 &939408148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -657,8 +658,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a944e0c5cd98e4a15b776dfbfc087d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 1121073067002447868, guid: 6a5bd6d7073bf4648a78fd7dcef5cc86, type: 3}
-  startDelay: 1
+  obstacle:
+  - {fileID: 1121073067002447868, guid: 6a5bd6d7073bf4648a78fd7dcef5cc86, type: 3}
+  - {fileID: 8465986407028496544, guid: 0f7b99e6daf78456ebe684536542e266, type: 3}
+  startDelay: 1.5
   repeatRate: 2
 --- !u!4 &2015107934
 Transform:

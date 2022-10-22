@@ -7,6 +7,7 @@ public class PlayerConttoller : MonoBehaviour
     public float jumpForce = 7.0f;
     public float gravityModifier = 1.0f;
     public bool gameOver = false;
+    public int score = 0;
 
     private bool isOnGround = true;
     private Rigidbody rigidBody;
@@ -18,13 +19,13 @@ public class PlayerConttoller : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
 
-        Physics.gravity *= gravityModifier;        
+        Physics.gravity *= gravityModifier;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isOnGround && !gameOver && Input.GetKeyDown(KeyCode.Space))
+        if (isOnGround && !gameOver && Input.GetKey(KeyCode.Space))
         {
             rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
