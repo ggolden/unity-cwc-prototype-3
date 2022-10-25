@@ -27,6 +27,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnObstacle()
     {
+        Debug.Log("Spawning");
         if (!playerControllerScript.gameOver)
         {
             int obstacleSelection = Random.RandomRange(0, obstacle.Length);
