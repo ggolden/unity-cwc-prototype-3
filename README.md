@@ -1,1 +1,1 @@
-# unity_cwc_prototype_3
+# unity-cwc-prototype-3
